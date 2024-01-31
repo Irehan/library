@@ -1,0 +1,64 @@
+<!-- HTML START -->
+<div class="bg-video-wrap">
+    <div class="fullscreen-video-wrap">
+       <video playsinline="" autoplay="" muted="" preload="" loop="" poster="assets/images/banner-1.webp">
+          <source src="assets/images/banner-video.mp4" type="video/mp4">
+          <source src="assets/images/banner-video.webm" type="video/webm">
+          <source src="assets/images/banner-video.ogv" type="video/ogv">
+       </video>
+    </div>
+ </div>
+ <div class="bannerCont text-center">
+    <h1>ELD Compliance Solution <span>Blue Horse ELD is a FMCSA Registered ELD</span></h1>
+    <p>The Blue Horse Electronic Logging Device seamlessly interfaces with a commercial motor vehicle's engine, adeptly capturing and documenting driving duration, hours of service (HOS), engine operational periods, vehicular motion, location, and mileage with effortless precision..</p>
+       <ul>
+          <li><button type="button" class="myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal-1">See plans &amp; pricing</button></li>
+          <li><button type="button" class="myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal-2">Request A Quote</button></li>
+       </ul>
+ </div>
+<!-- HTML END -->
+
+<!-- CSS START -->
+.bg-video-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/banner-1.webp) no-repeat center center/cover;
+}
+.bg-video-wrap:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.80);
+    z-index: 1;
+}
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.fullscreen-video-wrap video {
+    min-height: 100%;
+    min-width: 100%;
+}
+.bannerCont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 2;
+    margin-top: -5.25rem;
+    width: 100%;
+    color: #fff;
+    max-width: 52.6875rem;
+}
+<!-- CSS END -->

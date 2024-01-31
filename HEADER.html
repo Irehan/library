@@ -1,0 +1,176 @@
+      <!-- HTML START -->
+      <header class="site-header">
+        <div class="topInfo" id="myHeader">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  width="120"
+                  height="36"
+                  loading="lazy"
+                  src="assets/images/decode-1.png"
+                  alt="de-code"
+                  class="logo-1"
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="hamburger-box">
+                  <span class="icon-menu"></span>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav menunav">
+                  <li class="active">
+                    <a aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="about-us.html"> About </a>
+                  </li>
+                  <li class="dropdown">
+                    <a
+                      class="dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Service
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="web-app-development.html"
+                          >Web and App Development</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="salesforce-development-company.html"
+                          >Salesforce Development</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="sports-solutions.html">Sports Solutions</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="metaverse.html">Metaverse</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="ar-vr-development.html"
+                          >AR/VR App Development</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="cyber-security.html">Cyber Security</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="contact-us.html">Contact Us </a>
+                  </li>
+                  <li>
+                    <a href="blog.html"> Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+       <!-- HTML END -->
+       <!-- CSS START -->
+       .topInfo {
+        position: absolute;
+        width: 100%;
+        z-index: 9;
+        top: 0;
+        background-color: #fff;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        -webkit-box-shadow: 0 1.1875rem 2.375rem rgb(0 0 0 / 30%),
+          0 0.9375rem 0.75rem rgb(0 0 0 / 22%);
+        box-shadow: 0 1.1875rem 2.375rem rgb(0 0 0 / 30%),
+          0 0.9375rem 0.75rem rgb(0 0 0 / 22%);
+        z-index: 9;
+        -webkit-animation: gradient 15s ease infinite;
+        animation: gradient 15s ease infinite;
+        animation: gradient 15s ease infinite;
+        z-index: 999;
+      }
+      header .navbar .collapse.navbar-collapse {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+      }
+      .navbar-nav.menunav li {
+        margin-right: 1.5rem;
+        position: relative;
+      }
+      .topInfo .navbar-nav li a,
+      .dropdown-menu a.dropdown-item {
+        color: #222;
+        font-size: 1rem;
+        font-weight: 500;
+        background-color: transparent;
+        font-weight: 700;
+      }
+      .dropdown-menu a.dropdown-item{
+        font-weight: 500 !important;
+      }
+      .topInfo .navbar-nav {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+      .topInfo .navbar-nav li a:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        background: #1a3197;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+      .topInfo .navbar-nav li a:hover:before {
+        width: 100%;
+        height: 0.1875rem;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+      .topInfo .dropdown-menu a.dropdown-item:hover {
+        color: #1a3197;
+      }
+      .topInfo .navbar-nav li.dropdown a:before {
+        display: none;
+      }
+       <!-- CSS END -->
+       <!-- JAVSCRIPT START -->
+       // sticky header start
+       window.onscroll = function () {
+           myFunction();
+       };
+       var header = document.getElementById("myHeader");
+       var sticky = header.offsetTop;
+       function myFunction() {
+           if (window.pageYOffset > sticky) {
+               header.classList.add("sticky");
+           } else {
+               header.classList.remove("sticky");
+           }
+       }
+       // sticky header end
+       <!-- JAVSCRIPT END -->

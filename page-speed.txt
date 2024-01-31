@@ -1,0 +1,10 @@
+width and height in html height auto in css file
+width="" height="" loading="lazy"
+autoprefixer
+rem all value
+minify all file
+font dynamic
+w3c validate
+rel="noopener" to every target="_blank"
+
+^(\s)*$\n
