@@ -1,0 +1,40 @@
+							<!-- HTML START -->
+							<div class="form-check">
+									<input type="checkbox" id="slickCheckbox5" class="form-check-input">
+									<label for="slickCheckbox5">Other benefits (Please specify)</label>
+									<textarea class="hidden-textarea" id="textarea5" data-gramm="false" wt-ignore-input="true" style="max-height: 7rem; padding: 20px;"></textarea>
+								</div>
+<!-- HTML END -->
+<!-- CSS START -->
+								.hidden-textarea {
+									max-height: 0;
+									overflow: hidden;
+									-webkit-transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+									-o-transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+									transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+									padding: 0;
+									border: 0;
+									-webkit-box-sizing: border-box;
+									box-sizing: border-box;
+									width: 100%;
+								}
+
+<!-- CSS END -->
+
+<script>
+	// Function to handle checkbox changes for a specific section
+	function handleCheckboxChange(checkboxId, textareaId) {
+	  const checkbox = document.getElementById(checkboxId);
+	  const textarea = document.getElementById(textareaId);
+	
+	  // Add an event listener to the checkbox
+	  checkbox.addEventListener('change', function() {
+	    // Toggle the max-height and padding of the hidden textarea based on the checkbox state
+	    textarea.style.maxHeight = this.checked ? '7rem' : '0';
+	    textarea.style.padding = this.checked ? '20px' : '0';
+	  });
+	}
+	
+	// Call the function for each section with unique identifiers
+	handleCheckboxChange('slickCheckbox1', 'textarea1');
+</script>
